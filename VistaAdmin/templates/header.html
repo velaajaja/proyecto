@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/index.css">
+        <title>R&M Construcciones</title>
+    </head>
+    
+    <tbody>
+    
+        <div class="container">
+            <aside>
+                <div class="toggle">
+                    <div class="logo">
+                        <img src="static/images/WhatsApp Image 2023-08-27 at 4.42.51 AM.jpeg">
+                        <h2><span class="danger">R&M</span>Construcciones</h2>
+                    </div>
+                    
+                </div>
+    
+                <div class="sidebar">
+                    
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            dashboard
+                        </span>
+                        <h3>MODULO EN PROCESO</h3>
+                    </a>
+                    
+                    <a href="{{ url_for('clientes.index') }}">
+                        <span class="material-icons-sharp">
+                            person_outline
+                        </span>
+                        <h3>Clientes</h3>
+                    </a>
+                    <a href="{{ url_for('empleados.index') }}">
+                        <span class="material-icons-sharp">
+                            person_outline
+                        </span>
+                        <h3>Empleados</h3>
+                    </a>
+                    <a href="{{ url_for('VistaClie.index') }}">
+                        <span class="material-icons-sharp">
+                            person_outline
+                        </span>
+                        <h3>VistaCliente</h3>
+                    </a>
+                    
+                    
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            logout
+                        </span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </aside>
+            <!-- End of Sidebar Section -->
+
+            <div class="right-section">
+                <div class="nav">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">
+                            menu
+                        </span>
+                    </button>
+                    <div class="dark-mode">
+                        <span class="material-icons-sharp active">
+                            light_mode
+                        </span>
+                        <span class="material-icons-sharp">
+                            dark_mode
+                        </span>
+                    </div>
+    
+                    
+                
+                    
+    
+                    <div class="profile">
+                        <div class="info">
+                            <p>Bienvenido <b>User</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="/static/images/profile-1.jpg">
+                        </div>
+                    </div>
+    
+                </div>
+
+                    
+</tbody>
+    </html>
+
+    

@@ -1,0 +1,53 @@
+{% include 'header.html' %}
+        <!-- Main Content -->
+        <main>
+            
+            
+            <!-- End of Analyses -->
+
+            <!-- New Users Section -->
+            
+            <br><br>
+            <h2>New Empleado</h2>
+            <h2><a href="{{ url_for('empleados.create') }}"><span class="danger">Crear Empleado</span></a></h2>
+
+            <br>
+
+            <form action="{{ url_for('empleados.storage') }}" method="post" enctype="multipart/form-data">
+                <div class="data"> 
+                <h2>Nombre:</h2><br>
+                <input type="text" name="ENombre" required><br>
+            
+                <br>
+
+                <h2>Correo:</h2><br>
+                <input type="email" name="ECorreo" required><br><br>
+            
+                <h2>Foto:</h2><br>
+
+            </div>
+            <div class="picture"> 
+                <input type="file" name="EFoto" accept=".jpg, .png, .jpeg" required><br><br>
+            </div>
+                
+                <button type="submit">Crear Empleado</button>
+            </form>
+            
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+            
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+    </div>
+
+    <script src="../static/js/orders.js"></script>
+    <script src="../static/js/index.js"></script>
+
+    {% include 'footer.html' %}
+
+    
+</tbody>

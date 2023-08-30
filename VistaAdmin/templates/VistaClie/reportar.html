@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reportar un Problema</title>
+<link rel="stylesheet" href="static/css/reportar.css"> <!-- Enlaza el archivo CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>Reportar un Problema</h1>
+    <form>
+      <label for="tipo-problema">Tipo de Problema:</label>
+      <select id="tipo-problema" name="tipo-problema">
+        <option value="carga">Problemas de Carga</option>
+        <option value="funcionalidad">Problemas de Funcionalidad</option>
+        <option value="otros">Otros Problemas</option>
+      </select>
+      <label for="descripcion">Descripción del Problema:</label>
+      <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describe el problema detalladamente..." required></textarea>
+      <button type="submit">Enviar Reporte</button>
+    </form>
+  </div>
+</body>
+</html>

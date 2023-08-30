@@ -1,0 +1,74 @@
+{% include 'header.html' %}
+
+        <!-- Main Content -->
+        <main>
+            
+            <!-- End of Analyses -->
+
+            <!-- New Users Section -->
+            
+            <br><br>
+            <h2>Nuevo Cliente</h2><br>
+            <h2><a href="{{ url_for('clientes.create') }}"><span class="danger">Crear Cliente</span></a></h2>
+            
+
+            {% for cliente in clientes %}
+            
+
+            <div class="new-users">
+                
+                
+                <div class="user-list">
+
+                    <div class="user">
+                        <h2>{{cliente[0] }}</h2>
+                    </div>
+
+                    <div class="user">
+                        <img class="img-thumbnail" width="100" src="{{ url_for('clientes.uploads', nombreFoto=cliente[3]) }}" alt="">                    
+                    </div>
+                    <div class="user">
+                        <div class="user">
+                            <h2>{{cliente[1] }}</h2>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <div class="user">
+                            <h2>{{cliente[2] }}</h2>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <h2>
+                            <a href="{{ url_for('clientes.edit', Clie_Id=cliente[0]) }}"><span class="danger">Editar</span></a>                        
+                        </h2>
+                    </div>
+                    <div class="user">
+                        <h2>
+                            <a href="{{ url_for('clientes.destroy', Clie_Id=cliente[0]) }}"><span class="danger">Eliminar</span></a>                        
+                        </h2>                 
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+            
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+
+        </div>
+
+
+    </div>
+
+    <script src="../static/js/orders.js"></script>
+    <script src="../static/js/index.js"></script>
+
+    {% include 'footer.html' %}
+
+    
+</tbody>

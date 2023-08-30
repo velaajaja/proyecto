@@ -1,0 +1,60 @@
+    
+    {% include 'header.html' %}
+
+        <!-- Main Content -->
+        <main>
+            
+            
+            <!-- End of Analyses -->
+
+            <!-- New Users Section -->
+            <br><br>
+            <h2>formulario para editar</h2>
+
+            {% for empleado in empleados%}
+            
+            <form  action="{{ url_for('empleados.update') }}" method="post" enctype="multipart/form-data">
+                <div class="data"> 
+                    <input type="text"value="{{ empleado[0] }}" name="EID" id="EID">
+                <br>
+                <h2>Nombre:</h2><br>
+                <input type="text" value="{{ empleado[1] }}" name="ENombre" id="ENombre"> 
+                <br>
+                <h2>Correo:</h2><br>
+                <input type="text" value="{{ empleado[2] }}" name="ECorreo" id="ECorreo">
+                <br>
+                <h2>Foto:</h2>
+            <br>
+        </div>
+        <div class="img-edit">
+            <img class="img-thumbnail" width="100" src="{{ url_for('empleados.uploads', nombreFoto=empleado[3]) }}" alt="">
+        </div> 
+            
+            <br>
+                <input type="file" name="EFoto" id="FFoto"> 
+                <br><br>
+                <input type="submit"  value="Actualizar">
+                <br>
+            
+            </form>
+            
+            {% endfor %}
+            
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+            
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+    </div>
+
+    <script src="../static/js/orders.js"></script>
+    <script src="../static/js/index.js"></script>
+
+    {% include 'footer.html' %}
+
+    
+</tbody>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetalMecánica</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../static/css/Clie.css">
+
+</head>
+
+<body>
+    <section class="forma">
+        <section>
+            <div class="logo">
+                <img src="../img/logo.jpeg" alt="">
+                <h4>Metal<span class="nombre">Mecánica</span></h4>
+            </div>
+            <div class="herramienta">
+                <!--herramientas-->
+                <h3>Herramientas</h3>   
+                <div class="lista">
+                    <li>
+                        <ul>
+                            <span class="list"><i class='bx bxs-user-rectangle'> <a href="{{ url_for('VistaClie.index') }}">inicio</a></i></span>
+                        </ul>
+                        <ul>
+                            <span class="list"><i class='bx bxs-user-rectangle'> <a href="{{ url_for('VistaClie.config') }}">Config</a></i></span>
+                        </ul>
+                        <ul>
+                            <span class="list"><i class='bx bx-briefcase'> <a href="{{ url_for('VistaClie.reportar') }}">Reportar</a></i></span>
+                        </ul>
+                        <ul>
+                            <span class="list"><i class='bx bxs-bell-minus'> <a href="{{ url_for('VistaClie.notificaciones') }}">notificaciones</a></i> </span>
+                        </ul>
+                    </li>
+                </div>
+                <div class="salir">
+                    <li>
+                        <ul >
+                            <span class="list"><i class='bx bx-log-out'> <a href="{{ url_for('VistaClie.logout') }}">log out</a></i> </span>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!--cotenido-->
+            <div class="contenido">
+                <h1>MetalMecánica RyM</h1>
+            </div>
+            <div class="contec">
+                <div class="informacion">
+                    <h3>clientes</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ad ea delectus, quia, culpa
+                        pariatur natus aut adipisci </p>
+                </div>
+                <div class="informacion">
+                    <h3>proyectos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsum molestias ullam atque
+                        blanditiis voluptatum rem cum culpa </p>
+                </div>
+                <div class="informacion">
+                    <h3>notificaciones</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, iusto, aut nesciunt quae
+                        atque
+                        repudiandae hic ipsa,</p>
+                </div>
+            </div>
+            <div class="resumen">
+                <h2> novedades de la empresa</h2>
+                <div class="general">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae, similique voluptatum
+                        esse
+                        est voluptas tempora, ex placeat ipsam saepe repellendus iure obcaecati reiciendis corporis
+                        distinctio perferendis molestias architecto incidunt!</p>
+                </div>
+            </div>
+        </section>
+        <div class="final">
+            <div class="usuario">
+                <li>
+                    <ul>
+                        <a href="">usuario</a>
+                        <span><i class='bx bx-user-circle'></i></span>
+                    </ul>
+                </li>
+            </div>
+            <div class="logof">
+                <img src="../img/logo.jpeg" alt="">
+                <h3>MetalMecánica RyM</h3>
+            </div>
+            <div class="not"></div>
+            <div class="not"></div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footercontainer">
+            <div class="social">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-tiktok' ></i></a>
+                <a href=""><i class='bx bxl-google-plus' ></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footerBottom">
+                <p>CopyRight &copy;2023; Designed by <span class="designer">Fahhem</span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
